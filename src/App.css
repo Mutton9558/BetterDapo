@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root{
@@ -66,4 +67,74 @@ html, body{
     transform: scale(1.2);
     text-decoration: underline;
     color: var(--accent);
+=======
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --background: #070521;
+    --text: #e0ddfa;
+    --primary: #867fed;
+    --secondary: #5b1599;
+    --accent: #af2ae2;
+}
+
+html, body{
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#header{
+    display: flex;
+    width: 100vw;
+    background-color: var(--primary);
+    align-items: center;
+    box-shadow: 0 0 10px var(--text);
+    border-bottom: #e0ddfa 2px solid;
+}
+
+#left-header{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+    text-shadow: 0 0 10px black;
+}
+
+#left-header h2{
+    font-size: 28px;
+    margin-left: 1rem;
+}
+
+#right-header{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 5rem 1rem 0;
+}
+
+#right-header .header-button{
+    border: none;
+    background: none;
+    margin-right: 2rem;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: var(--text);
+    text-shadow: 0 0 5px black;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+#right-header .header-button:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+    color: var(--accent);
+>>>>>>> 9a61175 (Added advertisement component)
 }
