@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root{
@@ -67,74 +66,48 @@ html, body{
     transform: scale(1.2);
     text-decoration: underline;
     color: var(--accent);
-=======
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
-:root{
-    --background: #070521;
-    --text: #e0ddfa;
-    --primary: #867fed;
-    --secondary: #5b1599;
-    --accent: #af2ae2;
 }
 
-html, body{
-    background-color: var(--background);
-    color: var(--text);
-    margin: 0;
-    font-family: "Roboto Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-#header{
-    display: flex;
+#container-ad{
+    position: relative;
     width: 100vw;
-    background-color: var(--primary);
-    align-items: center;
-    box-shadow: 0 0 10px var(--text);
-    border-bottom: #e0ddfa 2px solid;
+    height:31.2rem;
 }
 
-#left-header{
-    width: 50%;
+#background-ad{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#background-ad img{
+    height: 100%;
+    width: 100%;
+}
+
+#text-ad{
     display: flex;
-    justify-content: flex-start;
+    
+    
+    width: 30%;
+    height: 30%;
+    justify-content: center;
     align-items: center;
-    margin: 1rem 0 1rem 0;
-    text-shadow: 0 0 10px black;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
 }
 
-#left-header h2{
-    font-size: 28px;
-    margin-left: 1rem;
+.left-ad, .right-ad{
+    position: absolute;
+    top: 30%;
 }
 
-#right-header{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    margin: 1rem 5rem 1rem 0;
+.left-ad{
+    left:10%;
 }
 
-#right-header .header-button{
-    border: none;
-    background: none;
-    margin-right: 2rem;
-    font-size: 22px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    color: var(--text);
-    text-shadow: 0 0 5px black;
-    transition: 0.2s ease-out;
-    cursor: pointer;
-}
-
-#right-header .header-button:hover{
-    transform: scale(1.2);
-    text-decoration: underline;
-    color: var(--accent);
->>>>>>> 9a61175 (Added advertisement component)
+.right-ad{
+    right: 10%;
 }
