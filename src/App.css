@@ -20,12 +20,16 @@ html, body{
 }
 
 #header{
+    position: fixed;
+    top: 0;
     display: flex;
     width: 100vw;
+    height: 8rem;
     background-color: var(--primary);
     align-items: center;
     box-shadow: 0 0 10px var(--text);
     border-bottom: #e0ddfa 2px solid;
+    z-index: 100;
 }
 
 #left-header{
